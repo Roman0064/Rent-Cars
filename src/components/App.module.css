@@ -1,19 +1,45 @@
 .App {
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App_logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_wrap{
+  display: flex;
+  gap: 40px;
+}
+
+.nav_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(11, 68, 205, 1);
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 120px;
+  height: 40px;
+}
+.nav_btn:hover,
+.nav_btn:focus{
+  background-color: rgba(52, 112, 255, 1);
 }
 
 .App_header {
-  background-color: #282c34;
-  height: 50px;
+  background-color: rgba(247, 247, 251, 1);
+  width: 100%;
+  height: 80px;
+  padding-right: 128px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }

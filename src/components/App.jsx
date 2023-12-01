@@ -11,10 +11,10 @@ function App () {
   return (
     <div className={css.App}>
       <header className={css.App_header}>
-        <nav>
-          <NavLink to="/"end>Home</NavLink>
-          <NavLink to="/catalog">Catalog</NavLink>
-          <NavLink to="/favorites">Favorites</NavLink>
+        <nav className={css.nav_wrap}>
+          <NavLink to="/"end className={css.nav_btn}>Home</NavLink>
+          <NavLink to="/catalog"className={css.nav_btn}>Catalog</NavLink>
+          <NavLink to="/favorites"className={css.nav_btn}>Favorites</NavLink>
         </nav>
       </header>
       <main>

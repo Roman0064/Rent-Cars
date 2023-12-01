@@ -18,9 +18,19 @@ const ListCars = () => {
                 {cars.map(car => (
                     <li key={car.id} className={css.card}>
                         <img src={car.img} alt={car.name} className={css.img}/>
-                        <p>{car.make}</p>
-                        <p>{car.model}</p>
-                        <p>{car.year}</p>
+                        <div className={css.wrap_text}>
+                            <p>{car.make}</p>
+                            <p>{car.model}</p>
+                            <p>{car.year}</p>
+                            <p>{car.rentalPrice}</p>
+                            <p>{car.address}</p>
+                            <p>{car.rentalCompany}</p>
+                            <p>Premium</p>
+                            <p>{car.type}</p>
+                            <p>{car.model}</p>
+                            <p>{car.id}</p>
+                            <p>{car.functionalities[0]}</p>
+                        </div>
                     </li>
                 ))}
             </ul>
