@@ -19,10 +19,12 @@ const ListCars = () => {
                     <li key={car.id} className={css.card}>
                         <img src={car.img} alt={car.name} className={css.img}/>
                         <div className={css.wrap_text}>
-                            <p>{car.make}</p>
-                            <p>{car.model}</p>
-                            <p>{car.year}</p>
-                            <p>{car.rentalPrice}</p>
+                            <span className={css.wraper_name}>
+                                <p>{car.make}</p>
+                                <p>{car.model}</p>
+                                <p>{car.year}</p>
+                                <p>{car.rentalPrice}</p>
+                            </span>
                             <p>{car.address}</p>
                             <p>{car.rentalCompany}</p>
                             <p>Premium</p>
@@ -31,6 +33,7 @@ const ListCars = () => {
                             <p>{car.id}</p>
                             <p>{car.functionalities[0]}</p>
                         </div>
+                        <button type="button" className={css.btn}>Learn More</button>
                     </li>
                 ))}
             </ul>

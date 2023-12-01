@@ -26,7 +26,49 @@
     border-radius: 14px;
 }
 
+.wraper_name{
+    display: flex;
+}
+
 .wrap_text{
     display: flex;
     flex-wrap: wrap;
+}
+.wrap_text > p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(18, 20, 23, 0.5);
+    border-color: rgba(18, 20, 23, 0.1);
+    border-right: solid 1px;
+    padding: 0;
+    margin: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.btn{
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(11, 68, 205, 1);
+    border: none;
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.btn:hover,
+.btn:focus{
+    background-color: rgba(52, 112, 255, 1);
 }
