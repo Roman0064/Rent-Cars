@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_rent_cars=self.webpackChunkreact_rent_cars||[]).push([[6],{6:function(e,r,n){n.r(r);n(791);var a=n(184);r.default=function(){return(0,a.jsxs)("div",{children:[(0,a.jsx)("h1",{children:"Welcome"}),(0,a.jsx)("p",{children:"We kindly invite you to our car rental service in Ukraine. We offer a wide selection of cars of different brands and configurations at affordable prices."})]})}}}]);
+//# sourceMappingURL=6.a0e2ffb7.chunk.js.map
