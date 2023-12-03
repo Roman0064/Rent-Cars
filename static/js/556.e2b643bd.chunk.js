@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_rent_cars=self.webpackChunkreact_rent_cars||[]).push([[556],{556:function(e,r,s){s.r(r);s(791);var t=s(184);r.default=function(){return(0,t.jsx)("div",{children:(0,t.jsx)("p",{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus culpa est perferendis cumque rem itaque nemo sit esse quod."})})}}}]);
-//# sourceMappingURL=556.e2b643bd.chunk.js.map
