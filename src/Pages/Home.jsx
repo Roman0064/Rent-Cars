@@ -1,10 +1,10 @@
 import React from 'react';
+import css from './Home.module.css'
 
 const Home = () =>{
     return (
-        <div>
+        <div className={css.container}>
             <h1>Welcome</h1>
-            <p>We kindly invite you to our car rental service in Ukraine. We offer a wide selection of cars of different brands and configurations at affordable prices.</p>
         </div>
     )
 };

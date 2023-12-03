@@ -5,7 +5,7 @@ import Loader from './Loader/Loader';
 
 const Home = lazy(() => import('../Pages/Home'));
 const Catalog = lazy(() => import('../Pages/Catalog'));
-const Favorites = lazy(() => import('../Pages/Favorites'));
+const FavoritesPage = lazy(() => import('../Pages/FavoritesPage'));
 
 function App () {
   return (
@@ -22,7 +22,7 @@ function App () {
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/catalog" element={<Catalog/>} />
-            <Route path="/favorites" element={<Favorites/>} />
+            <Route path="/favorites" element={<FavoritesPage/>} />
             <Route path='*' element={<Home/>} />
           </Routes>
         </Suspense>

@@ -8,7 +8,6 @@ const Catalog = () => {
         <div>
             <Filter/>
             <ListCars/>
-            <button type="button">Load more</button>
         </div>
     )
 };

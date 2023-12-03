@@ -1,6 +1,8 @@
 .wrapper{
     margin: 0;
     padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 1440px;
     display: flex;
     justify-content: center;
@@ -63,6 +65,12 @@
     padding-left: 6px;
     padding-right: 6px;
 }
+.svg{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
 
 .btn{
     padding: 0;
@@ -87,29 +95,4 @@
 .btn:hover,
 .btn:focus{
     background-color: rgba(52, 112, 255, 1);
-}
-.btn_more{
-    margin-top: 20px;
-    width: 136px;
-    height: 48px;
-    background-color: rgba(11, 68, 205, 1);
-    border-radius: 12px;
-    border: none;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0em;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
-.btn_more:hover,
-.btn_more:focus{
-    background-color: rgba(52, 112, 255, 1);
-}
-.svg{
-    top: 10px;
-    right: 10px;
-    position: absolute;
-    cursor: pointer;
 }

@@ -4,10 +4,15 @@ import { Cars } from './operations';
 const initialState = {
   cars: {
     items: [],
+    favorites: [],
     isLoading: false,
-    error: null,
   },
-  filter: '',
+  filter: {
+    make: '',
+    rentalPrice: '',
+    FromMileage: '',
+    ToMileage: ''
+  },
 };
 export const carsSlice = createSlice({
   name: 'cars',
@@ -15,7 +20,22 @@ export const carsSlice = createSlice({
   reducers: {
     setFilter: (state, action) => {
       state.filter = action.payload;
-    }
+    },
+    setFavorite: (state, action) => {
+      const carToAdd = action.payload;
+      if (!state.cars.favorites || !Array.isArray(state.cars.favorites)) {
+        state.cars.favorites = [];
+      }
+      if (!state.cars.favorites.find(car => car.id === carToAdd.id)) {
+        state.cars.favorites = [...state.cars.favorites, carToAdd];
+      }
+      return state;
+    },
+    removeFavorite(state, action) {
+      const item = state.cars.favorites.findIndex(({ id }) => id === action.payload);
+      state.cars.favorites.splice(item, 1);
+    },
+    
   },
   extraReducers: bulider => 
   bulider.addCase(Cars.pending, (state, action) => {
@@ -31,5 +51,5 @@ export const carsSlice = createSlice({
   }),
 });
 
-export const { setFilter } = carsSlice.actions;
+export const { setFilter, setFavorite, removeFavorite } = carsSlice.actions;
 export const carsReducer = carsSlice.reducer;
